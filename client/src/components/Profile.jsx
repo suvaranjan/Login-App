@@ -69,7 +69,12 @@ export default function ProfileUpdate() {
         </div>
 
         <div className="profilechild">
-          Email : <span className="profilespan">{data.email}</span>
+          Email :{" "}
+          {data.email ? (
+            <span className="profilespan">{data.email}</span>
+          ) : (
+            <span className="updatespan">Update Your Email</span>
+          )}
         </div>
 
         <div className="profilechild">
